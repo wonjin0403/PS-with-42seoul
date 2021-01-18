@@ -5,37 +5,32 @@ int	main(void)
 {
 	int num;
 	int i, j;
-	int *init;
-	int *ans;
+	int init[2][500000];
 
 	scanf("%d", &num);
 	i = 0;
-	if (!(init = (int *)malloc(sizeof(int) * (num + 1))))
-		return 0;
-	if (!(ans = (int *)malloc(sizeof(int) * (num + 1))))
-		return 0;
-	ans[num + 1] = '\0';
 	while (i < num)
 	{
-		scanf("%d", &init[i]);
+		scanf("%d", &init[0][i]);
 		i++;
 	}
-	
+	init[0][num] = '\0';
+	init[1][num] = '\0';
 	while (i > 0)
 	{
 		i--;
 		j = 1;
-		while ((init[i] > init[i - j]) && (i - j >= 0) && (j < num))
+		while ((init[0][i] > init[0][i - j]) && (i - j >= 0) && (j < num))
 			j++;
 		if (j > i)
-			ans[i] = 0;
+		init[1][i] = 0;
 		else
-			ans[i] = i - j + 1 ;
+		init[1][i] = i - j + 1 ;
 	}
 
 	while (i < num)
 	{
-		printf("%d", ans[i]);
+		printf("%d",init[1][i]);
 		if (i != num)
 			printf(" ");
 		i++;
