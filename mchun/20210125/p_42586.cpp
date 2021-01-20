@@ -22,14 +22,14 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
     return answer;
 }
 
-int		main()
-{
-	vector<int>		progress{93, 30, 55};
-	vector<int>		speeds{1, 30, 5};
-	vector<int>		speeds2{1, 1, 1, 1, 1, 1};
-	vector<int>		progress2{95, 90, 99, 99, 80, 99};
-	vector<int>		sol = solution(progress2, speeds2);
+// int		main()
+// {
+// 	vector<int>		progress{93, 30, 55};
+// 	vector<int>		speeds{1, 30, 5};
+// 	vector<int>		speeds2{1, 1, 1, 1, 1, 1};
+// 	vector<int>		progress2{95, 90, 99, 99, 80, 99};
+// 	vector<int>		sol = solution(progress2, speeds2);
 
-	for (auto i = sol.begin(); i != sol.end(); ++i)
-		cout << *i << " ";
-}
+// 	for (auto i = sol.begin(); i != sol.end(); ++i)
+// 		cout << *i << " ";
+// }
