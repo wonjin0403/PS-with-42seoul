@@ -24,7 +24,6 @@ public class Main
             {
                 int temp = Integer.parseInt(st.nextToken());
                 arr[i].add(temp);
-//                arr[temp].add(i);
             }
 
             for (int i = 1 ; i < arr.length; i ++)
