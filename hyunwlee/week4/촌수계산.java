@@ -45,7 +45,7 @@ public class Main
 //            System.out.println();
 //        }
 
-//        System.out.println(bfs(from, to));
+//        System.out.println(bfs(from, to)); // dfs가 더 편할 것 같다.
         dfs(from, to, 0);
         System.out.println(answer);
     }
