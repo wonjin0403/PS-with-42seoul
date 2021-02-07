@@ -50,6 +50,21 @@ public class Main
         System.out.println(answer);
     }
 
+	/*
+     * BFS 반례
+     * 7
+     * 4 7
+     * 6
+     * 1 2
+     * 1 3
+     * 2 4
+     * 2 5
+     * 2 6
+     * 3 7
+     * 정답:  4
+     * 출력값: 6
+     */
+
     public static int bfs(int from, int to)
     {
         Queue<Integer> q = new LinkedList<>();
