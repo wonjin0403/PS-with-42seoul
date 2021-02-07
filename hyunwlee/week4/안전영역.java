@@ -45,7 +45,7 @@ public class Main {
         arr = new int[n][n];
         arr2 = new int[n][n];
         check = new boolean[n][n];
-        int answer = 1; // ☔️ 비가 오지 않는 경우에는 모든 지도가 안전영역임으로 초기 값은 1로 주었다.
+        int answer = 1; // ☔️ 비가 오지 않는 경우에는 모든 지도가 안전영역임으로 초기 값은 1로 주었다. ex) n이 0으로 주어지는 경우
 
         for (int i = 0; i < arr.length; i++)
         {
