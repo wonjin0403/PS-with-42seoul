@@ -54,8 +54,8 @@ public class Main
         bfs(1);
 
         int start = 0;
-        for ( int i = 1; i < dist.length ; i++) {
-            if ( dist[start] < dist[i] ) {
+        for (int i = 1; i < dist.length; i++) {
+            if (dist[start] < dist[i]) {
                 start = i;
             }
         }
@@ -66,8 +66,8 @@ public class Main
 
         int max = start;
 
-        for ( int i = 1; i < dist.length ; i++) {
-            if ( dist[max] < dist[i] ) {
+        for (int i = 1; i < dist.length; i++) {
+            if (dist[max] < dist[i]) {
                 max = i;
             }
         }
